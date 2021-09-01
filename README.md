@@ -15,7 +15,7 @@ submitted from the head node.
 
 If you haven't installed the `nextflow` or not familiar with `nextflow`, we recommend a brief tutorial on [nextflow](https://www.nextflow.io/). To install the `nextflow`, try the following command
 
-``
+```
 curl -s https://get.nextflow.io | bash
 ```
 
