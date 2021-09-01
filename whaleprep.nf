@@ -21,7 +21,6 @@ process PrankAlignment {
     script:
     """
     module load prank
-    module load python
     prank -d=$fasta -o=${fasta}
     OMP_NUM_THREADS=1 python3 $tools convert_aln \
         -i ${fasta}.best.fas -if "fasta" -o ${fasta}.nex -of "nexus"
@@ -44,7 +43,6 @@ process MrBayesMCMC {
     script:
     """
     module load mrbayes
-    module load python
     mkdir ${aln}_mb
     sed  "s/|/_/g" ${aln} > ${aln}_mb/${aln}  # get alignment (replace | by _)
     cd ${aln}_mb
