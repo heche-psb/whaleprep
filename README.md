@@ -38,6 +38,8 @@ gene families of interest (one file per family). Optional arguments currently ar
 --burnin        the number of samples to discard as burn-in in ALEobserve
 ```
 
+Please make sure that there is no "-" in the gene name, otherwise the mrbayes might have error.
+
 Notes on updates: the `Bio.Alphabet` module is removed from `Biopython 1.78` (September 2020),see the [document](https://biopython.org/wiki/Alphabet), the biopython<=1.77 is now required, please try
 
 ```
