@@ -22,7 +22,7 @@ process PrankAlignment {
     """
     module load prank
     prank -d=$fasta -o=${fasta}
-    OMP_NUM_THREADS=1 python3 $tools convert_aln \
+    OMP_NUM_THREADS=1 python3 $tools convert-aln \
         -i ${fasta}.best.fas -if "fasta" -o ${fasta}.nex -of "nexus"
     """
 }
